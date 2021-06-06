@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    background: url("e.jpg")
+}
+
 .menu-bar {
     background: brown;
     text-align: center;
@@ -10,7 +14,7 @@
 
 .menu-bar ul {
     display: inline-flex;
-    color: yellow;
+    color: white;
     list-style: none;
 }
 
@@ -39,4 +43,21 @@
 .menu-bar ul li:hover .subclass ul {
     display: block;
     margin: 20px;
+}
+
+.subname {
+    display: none;
+}
+
+.menu-bar ul li:hover .subclass ul li:hover .subname {
+    display: block;
+    position: absolute;
+    background: brown;
+    margin-left: 150px;
+    margin-top: 0px;
+}
+
+.menu-bar ul li:hover .subclass ul li:hover .subname ul {
+    display: block;
+    margin-left: 20px;
 }
